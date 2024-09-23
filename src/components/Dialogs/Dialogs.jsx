@@ -45,8 +45,6 @@ let mesElem = mesData.map(m => <MessageItem mes={m.mes}/>)
 
             <div className={s.dialog_massages}>
                 {mesElem}
-               
-
             </div>
         </div>
     )
