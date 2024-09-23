@@ -4,7 +4,11 @@ grid-template-columns: 2fr 5fr;
 }
 
 .dialogs_items{
+    padding: 10px;
+}
 
+.dialogs_items .active {
+    color:gold;
 }
 
 .dialog {

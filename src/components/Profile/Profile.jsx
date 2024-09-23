@@ -2,17 +2,28 @@ import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
 
-const Profile = () => {
-  return (
+const ProfileInfo = () => {
+  return(
     <div>
       <div>
-        <img src='https://portscaner.ru/Files/Wallpaper/Medium/5fc4f836b358f.jpg' />
+        <img src='https://portscaner.ru/Files/Wallpaper/Medium/5fc4f836b358f.jpg' alt='img'/>
       </div>
-      <div>
+      <div className={s.descriptionBlock}>
         ava + description
       </div>
-      <MyPosts />
+
     </div>
+  )
+}
+
+const Profile = () => {
+  return (
+<>
+<ProfileInfo />
+<MyPosts />
+</>
+
+
   )
 }
 
