@@ -16,11 +16,14 @@ const ProfileInfo = () => {
   )
 }
 
-const Profile = () => {
+
+
+const Profile = (props) => {
+  debugger;
   return (
 <>
 <ProfileInfo />
-<MyPosts />
+<MyPosts postData={props.state.postData}/>
 </>
 
 
